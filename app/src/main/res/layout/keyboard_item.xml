@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/digitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@null"
+        android:padding="15dp"
+        android:text="#"
+        android:textSize="32sp"
+        android:fontFamily="@font/poppins" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/imageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@null"
+        android:padding="30dp"
+        android:src="@drawable/ic_backspace"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/fingerprintBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@null"
+        android:padding="15dp"
+        android:src="@drawable/ic_fingerprint"
+        android:visibility="gone" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
