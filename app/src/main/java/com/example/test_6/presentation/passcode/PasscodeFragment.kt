@@ -41,12 +41,20 @@ class PasscodeFragment : BaseFragment<FragmentPasscodeBinding>(FragmentPasscodeB
         indicatorAdapter = IndicatorAdapter()
 
         binding.recyclerViewKeyboard.apply {
-            layoutManager = GridLayoutManager(context, 3)
+            layoutManager = object : GridLayoutManager(requireContext(), 3) {
+                override fun canScrollVertically(): Boolean {
+                    return false
+                }
+            }
             adapter = keyboardAdapter
         }
 
         binding.recyclerViewIndicator.apply {
-            layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+            layoutManager = object : LinearLayoutManager(requireContext(), HORIZONTAL, false) {
+                override fun canScrollHorizontally(): Boolean {
+                    return false
+                }
+            }
             adapter = indicatorAdapter
         }
     }
