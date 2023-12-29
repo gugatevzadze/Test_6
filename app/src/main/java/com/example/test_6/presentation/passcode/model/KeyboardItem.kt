@@ -1,4 +1,4 @@
-package com.example.test_6.presentation.passcode.data
+package com.example.test_6.presentation.passcode.model
 
 data class KeyboardItem(
     val value: String? = null,

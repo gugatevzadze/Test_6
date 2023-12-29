@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.test_6.R
 import com.example.test_6.databinding.IndicatorItemBinding
-import com.example.test_6.presentation.passcode.data.IndicatorItem
+import com.example.test_6.presentation.passcode.model.IndicatorItem
 
 class IndicatorAdapter :
     ListAdapter<IndicatorItem, IndicatorAdapter.ViewHolder>(IndicatorItemDiffCallback()) {

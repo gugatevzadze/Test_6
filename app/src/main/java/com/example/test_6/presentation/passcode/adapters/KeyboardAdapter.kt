@@ -5,14 +5,14 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.test_6.databinding.KeyboardItemBinding
 import com.example.test_6.presentation.passcode.common.KeyboardItemClickListener
-import com.example.test_6.presentation.passcode.data.KeyboardItem
-import com.example.test_6.presentation.passcode.data.KeyboardType
-import com.example.test_6.presentation.passcode.data.LocalData
+import com.example.test_6.presentation.passcode.model.KeyboardItem
+import com.example.test_6.presentation.passcode.model.KeyboardType
+import com.example.test_6.presentation.passcode.data.PasscodeKeyboardData
 
 class KeyboardAdapter(private val listener: KeyboardItemClickListener) :
     RecyclerView.Adapter<KeyboardAdapter.ViewHolder>() {
 
-    private val keyboardItems = LocalData.keyboard.toMutableList()
+    private val keyboardItems = PasscodeKeyboardData.keyboard.toMutableList()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)

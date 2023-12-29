@@ -1,8 +1,10 @@
 package com.example.test_6.presentation.passcode.data
 
 import com.example.test_6.R
+import com.example.test_6.presentation.passcode.model.KeyboardItem
+import com.example.test_6.presentation.passcode.model.KeyboardType
 
-object LocalData {
+object PasscodeKeyboardData {
     val keyboard = listOf<KeyboardItem>(
         KeyboardItem("1", null, KeyboardType.DIGIT),
         KeyboardItem("2", null, KeyboardType.DIGIT),

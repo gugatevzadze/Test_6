@@ -3,8 +3,8 @@ package com.example.test_6.presentation.passcode
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.test_6.domain.PasscodeRepository
-import com.example.test_6.presentation.passcode.data.IndicatorItem
 import com.example.test_6.presentation.passcode.common.PasscodeResult
+import com.example.test_6.presentation.passcode.model.IndicatorItem
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -32,7 +32,6 @@ class PasscodeViewModel @Inject constructor(
         }
         if (_enteredPasscode.value.length == 4) {
             verifyPasscode(_enteredPasscode.value)
-            resetPassword()
         }
     }
 
@@ -72,5 +71,6 @@ class PasscodeViewModel @Inject constructor(
             }
         }
         _verificationResult.value = null
+        resetPassword()
     }
 }

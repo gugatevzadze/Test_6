@@ -5,13 +5,13 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.test_6.BaseFragment
 import com.example.test_6.databinding.FragmentPasscodeBinding
+import com.example.test_6.presentation.BaseFragment
 import com.example.test_6.presentation.passcode.adapters.IndicatorAdapter
 import com.example.test_6.presentation.passcode.adapters.KeyboardAdapter
 import com.example.test_6.presentation.passcode.common.KeyboardItemClickListener
-import com.example.test_6.presentation.passcode.data.IndicatorItem
 import com.example.test_6.presentation.passcode.common.PasscodeResult
+import com.example.test_6.presentation.passcode.model.IndicatorItem
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
