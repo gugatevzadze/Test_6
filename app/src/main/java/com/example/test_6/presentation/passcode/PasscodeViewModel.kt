@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.test_6.domain.PasscodeRepository
 import com.example.test_6.presentation.passcode.data.IndicatorItem
-import com.example.test_6.presentation.passcode.data.PasscodeResult
+import com.example.test_6.presentation.passcode.common.PasscodeResult
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

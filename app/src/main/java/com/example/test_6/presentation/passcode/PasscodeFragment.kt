@@ -9,9 +9,9 @@ import com.example.test_6.BaseFragment
 import com.example.test_6.databinding.FragmentPasscodeBinding
 import com.example.test_6.presentation.passcode.adapters.IndicatorAdapter
 import com.example.test_6.presentation.passcode.adapters.KeyboardAdapter
-import com.example.test_6.presentation.passcode.adapters.KeyboardItemClickListener
+import com.example.test_6.presentation.passcode.common.KeyboardItemClickListener
 import com.example.test_6.presentation.passcode.data.IndicatorItem
-import com.example.test_6.presentation.passcode.data.PasscodeResult
+import com.example.test_6.presentation.passcode.common.PasscodeResult
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 

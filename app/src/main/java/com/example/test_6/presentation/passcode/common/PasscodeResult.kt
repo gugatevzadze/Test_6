@@ -1,4 +1,4 @@
-package com.example.test_6.presentation.passcode.data
+package com.example.test_6.presentation.passcode.common
 
 sealed class PasscodeResult {
     data class Success(val message: String) : PasscodeResult()

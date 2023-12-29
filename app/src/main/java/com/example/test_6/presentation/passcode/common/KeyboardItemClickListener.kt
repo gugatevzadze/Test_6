@@ -1,4 +1,4 @@
-package com.example.test_6.presentation.passcode.adapters
+package com.example.test_6.presentation.passcode.common
 
 interface KeyboardItemClickListener {
     fun onDigitClick(value: String)
